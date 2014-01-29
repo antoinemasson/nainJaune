@@ -20,7 +20,7 @@ import static org.fest.assertions.Assertions.*;
 
 import models.Carte;
 
-public class ApplicationTest {
+public class CarteTest {
 
 
     @Test

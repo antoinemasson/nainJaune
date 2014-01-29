@@ -26,5 +26,6 @@ public class CarteTest {
     @Test
     public void Carte_() {
 	Carte c = new Carte("dix","pique");
+	assertThat(c.get_valeur().equals("dix"));
     }
 }

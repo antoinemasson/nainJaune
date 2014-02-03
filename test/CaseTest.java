@@ -31,5 +31,7 @@ public class CaseTest {
 		assertThat(c!=null);
 		assertThat(c.get_mise()==1);
 		assertThat(c.get_cagnotte()==0);
+		Carte e = new Carte("deux","coeur");
+		assertThat(!e.est_prise());
 	}
 }

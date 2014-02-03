@@ -18,5 +18,9 @@ public class Carte {
 	public String get_valeur(){
 		return valeur;
 	}
+		
+	public String get_signe(){
+		return signe;
+	}
 
 }

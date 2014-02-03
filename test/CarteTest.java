@@ -27,9 +27,9 @@ public class CarteTest {
     public void Carte_() {
 	Carte c = new Carte("dix","pique");
 	assertThat(c.get_valeur().equals("dix"));
-	assertThat(c.getsigne().equals("pique"));
+	assertThat(c.get_signe().equals("pique"));
 	Carte d = new Carte("neuf","carreaux");
 	assertThat(!d.get_valeur().equals("dix"));
-	assertThat(!d.getsigne().equals("pique"));
+	assertThat(!d.get_signe().equals("pique"));
     }
 };

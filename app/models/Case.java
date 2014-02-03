@@ -16,6 +16,7 @@ public class Case {
 	prenante=p;
 	mise=m;
 	cagnotte=0;
+	prise=false;
     }
 
 };

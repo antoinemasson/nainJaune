@@ -30,5 +30,6 @@ public class CaseTest {
 		Case c = new Case(d,1);
 		assertThat(c!=null);
 		assertThat(c.get_mise()==1);
+		assertThat(c.get_cagnotte()==0);
 	}
 }

@@ -19,4 +19,11 @@ public class Case {
 	prise=false;
     }
 
+    public double get_mise(){
+	return mise;
+    }
+
+    public double get_cagnotte(){
+	return cagnotte;
+    }
 };

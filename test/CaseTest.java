@@ -28,5 +28,6 @@ public class CaseTest {
     public void Case_() {
 		Carte d = new Carte("dix","carreaux");
 		Case c = new Case(d,1);
+		assertThat(c!=null);
 	}
 }

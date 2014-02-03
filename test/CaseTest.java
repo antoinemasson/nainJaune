@@ -29,5 +29,6 @@ public class CaseTest {
 		Carte d = new Carte("dix","carreaux");
 		Case c = new Case(d,1);
 		assertThat(c!=null);
+		assertThat(c.get_mise().equals(1));
 	}
 }

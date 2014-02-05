@@ -29,5 +29,8 @@ public class PlateauTest{
 		Plateau p = new Plateau();
 		assertThat(p!=null);
 		p.mise();
+
+		Carte c = new Carte("trois","pique");
+		assertThat(p.prenante(c)==0);
 }
 }

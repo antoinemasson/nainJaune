@@ -16,4 +16,8 @@ public class Joueur{
 		nom = n;
 		s = null;
 	}
+
+	public get_argent(){
+		return argent;
+	}
 }

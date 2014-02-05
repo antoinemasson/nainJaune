@@ -1,6 +1,8 @@
 logs
 project/project
 project/target
+project/activator*
+activator*
 target
 tmp
 .history

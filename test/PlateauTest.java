@@ -28,5 +28,6 @@ public class PlateauTest{
 	public void Plateau_(){
 		Plateau p = new Plateau();
 		assertThat(p!=null);
+		p.mise();
 }
 }

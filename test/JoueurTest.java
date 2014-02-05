@@ -33,5 +33,7 @@ public class JoueurTest {
     assertThat(j.get_argent()==140);
     j.gain(110);
     assertThat(j.get_argent()==250);
+	Carte c = new Carte("as","pique");
+	j.done(c);
 }
 }

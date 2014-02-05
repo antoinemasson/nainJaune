@@ -28,8 +28,8 @@ public class JoueurTest {
     public void Joueur() {
     Joueur j = new Joueur("toto");
     assertThat(j!=null);
-    assertThat(J.get_argent()==150);
-    J.mise(10);
-    assertThat(J.get_argent()==140);
+    assertThat(j.get_argent()==150);
+    j.mise(10);
+    assertThat(j.get_argent()==140);
 }
 }

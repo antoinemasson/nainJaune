@@ -17,7 +17,11 @@ public class Joueur{
 		s = null;
 	}
 
-	public get_argent(){
+	public int get_argent(){
 		return argent;
+	}
+
+	public void mise(double mise){
+		argent -= mise;
 	}
 }

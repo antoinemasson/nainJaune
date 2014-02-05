@@ -41,5 +41,7 @@ public class Joueur{
         s.remove(c);
     }
     
-    
+    public Carte[] deck(){
+        return s.toArray(new Carte[0]);
+    }
 }

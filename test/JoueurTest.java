@@ -42,15 +42,28 @@ public class JoueurTest {
 	j.donne(d);
 	j.donne(e);
 
-	
 	j.jouer(e);
 	assertThat(j.possede(e)==false);
 
-        D=new Case[2];
-        D[0]= new Carte("dix","carreaux");
-        D[1]= new Carte("valet","trefle");
-        D[2]= new Carte("dame","pique");
-	assertThat(j.deck().equals(D));
+	
+	Joueur k = new Joueur("joueur 2");
+
+	Carte f = new Carte("dix","carreaux");
+	Carte g = new Carte("valet","trefle");
+	Carte h = new Carte("dame","pique");
+
+	k.donne(f);
+	k.donne(g);
+	k.donne(h);
+
+        Carte[] D = new Carte[3];
+        D[0]= f;
+        D[1]= g;
+        D[2]= h;
+	assertThat(k.deck().equals(D));
+
+
+
 
 }
 }

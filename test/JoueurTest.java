@@ -28,5 +28,6 @@ public class JoueurTest {
     public void Joueur() {
     Joueur j = new Joueur("toto");
     assertThat(j!=null);
+    assertThat(J.get_argent()==150);
 }
 }

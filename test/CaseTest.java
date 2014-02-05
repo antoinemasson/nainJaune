@@ -37,8 +37,6 @@ public class CaseTest {
 		assertThat(e.prise()==20);
 		assertThat(e.est_prise()==true);
 		assertThat(e.get_cagnotte()==0);
-		//assertThat(c.est_prise());
-		//assertThat(c.get_prenante().equals(d));
 		
 	}
 }

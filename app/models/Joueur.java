@@ -24,4 +24,8 @@ public class Joueur{
 	public void mise(double mise){
 		argent -= mise;
 	}
+
+	public void gain(double gain){
+		argent += gain;
+	}
 }

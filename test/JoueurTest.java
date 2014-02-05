@@ -31,5 +31,7 @@ public class JoueurTest {
     assertThat(j.get_argent()==150);
     j.mise(10);
     assertThat(j.get_argent()==140);
+    j.gain(110);
+    assertThat(j.get_argent()==250);
 }
 }

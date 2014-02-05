@@ -18,4 +18,8 @@ public class Plateau{
         plat[3]= new Case(new Carte("roi","coeur"),4);
         plat[4]= new Case(new Carte("sept","carreaux"),5);
     }
-}
+    
+    public void mise(){
+        for( int i=0; i<5; i+=1)
+            plat[i].mise(4*plat.get_mise());   
+    }

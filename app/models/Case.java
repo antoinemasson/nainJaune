@@ -20,19 +20,19 @@ prise=false;
     }
 
     public double get_mise(){
-return mise;
+        return mise;
     }
 
     public double get_cagnotte(){
-return cagnotte;
+        return cagnotte;
     }
 
     public boolean est_prise(){
-return prise;
+        return prise;
     }
 
     public Carte get_prenante(){
-return prenante;
+        return prenante;
     }
-
+    
 };

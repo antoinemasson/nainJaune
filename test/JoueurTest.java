@@ -34,6 +34,6 @@ public class JoueurTest {
     j.gain(110);
     assertThat(j.get_argent()==250);
 	Carte c = new Carte("as","pique");
-	j.done(c);
+	j.donne(c);
 }
 }

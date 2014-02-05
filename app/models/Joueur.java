@@ -28,4 +28,8 @@ public class Joueur{
 	public void gain(double gain){
 		argent += gain;
 	}
+    
+    public void donne(Carte c){
+        s.add(c);
+    } 
 }

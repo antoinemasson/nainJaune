@@ -20,7 +20,7 @@ import static org.fest.assertions.Assertions.*;
 
 import models.Carte;
 import models.Case;
-import models.Jeu;
+import models.Plateau;
 
 public class PlateauTest{
 

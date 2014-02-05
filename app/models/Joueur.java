@@ -32,4 +32,8 @@ public class Joueur{
     public void donne(Carte c){
         s.add(c);
     } 
+    
+    public boolean possede(Carte c){
+       return s.contains(c);
+    } 
 }

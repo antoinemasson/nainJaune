@@ -36,5 +36,13 @@ public class JoueurTest {
 	Carte c = new Carte("as","pique");
 	j.donne(c);
 	assertThat(j.possede(c)==true);
+
+	Carte d = new Carte("roi","coeur");
+	Carte e = new Carte("2","trefle");
+	j.donne(d);
+	j.donne(e);
+
+	j.jouer(e);
+	assertThat(j.possede(e)==false);
 }
 }

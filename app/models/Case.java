@@ -26,4 +26,8 @@ public class Case {
     public double get_cagnotte(){
 	return cagnotte;
     }
+        
+    public boolean est_prise(){
+    return prise;
+    }
 };

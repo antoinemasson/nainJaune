@@ -21,7 +21,7 @@ import static org.fest.assertions.Assertions.*;
 import models.Joueur;
 import models.Carte;
 
-public class CaseTest {
+public class JoueurTest {
     
 	
 	@Test

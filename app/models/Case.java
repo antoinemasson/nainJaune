@@ -13,10 +13,10 @@ private double cagnotte;
 private boolean prise;
 
     public Case (Carte p, double m){
-prenante=p;
-mise=m;
-cagnotte=0;
-prise=false;
+        prenante=p;
+        mise=m;
+        cagnotte=0;
+        prise=false;
     }
 
     public double get_mise(){
@@ -35,4 +35,14 @@ prise=false;
         return prenante;
     }
     
+    public void mise(double m){
+        cagnotte+=m;
+    }
+    
+    public double prise(){
+        double c=cagnotte;
+        cagnotte=0;
+        prise=true;
+        return c;  
+    }
 };

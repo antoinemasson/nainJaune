@@ -36,4 +36,10 @@ public class Joueur{
     public boolean possede(Carte c){
        return s.contains(c);
     } 
+    
+    public void jouer(Carte c){
+        s.remove(c);
+    }
+    
+    
 }

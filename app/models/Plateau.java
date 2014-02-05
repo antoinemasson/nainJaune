@@ -5,12 +5,10 @@ import javax.validation.*;
 import play.data.validation.Constraints.*;
 
 public class Plateau{
-    @Required
-	private Set<Carte> talon = new TreeSet<Carte>();  
+    @Required  
     private Case plat[];
     
     public Plateau(){
-        talon=null;
         plat=new Case[5];
         plat[0]= new Case(new Carte("dix","carreaux"),1);
         plat[1]= new Case(new Carte("valet","trefle"),2);
@@ -21,5 +19,13 @@ public class Plateau{
     
     public void mise(){
         for( int i=0; i<5; i+=1)
-            plat[i].mise(4*plat.get_mise());   
+            plat[i].mise(4*plat[i].get_mise());   
     }
+    
+    public double prenante(Carte c){
+        double res=0;
+        for( int i=0; i<5; i+=1)
+            if(plat[i].get_prenante()==c) res = plat[i].prise();
+        return res;
+    }
+}

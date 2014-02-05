@@ -35,5 +35,6 @@ public class JoueurTest {
     assertThat(j.get_argent()==250);
 	Carte c = new Carte("as","pique");
 	j.donne(c);
+	assertThat(j.possede(c)==true);
 }
 }

@@ -28,4 +28,20 @@ public class Plateau{
             if(plat[i].get_prenante()==c) res = plat[i].prise();
         return res;
     }
+    
+    public boolean prise (Carte c){
+        Carte a=new Carte("dix","carreaux");
+        if(c==a)return true;
+        a=new Carte("valet","trefle");
+        if(c==a)return true;
+        a=new Carte("dame","pique");
+        if(c==a)return true;        
+        a=new Carte("roi","coeur");
+        if(c==a)return true;        
+        a=new Carte("sept","carreaux");
+        if(c==a)return true;  
+        return false;
+        
+        
+    }
 }

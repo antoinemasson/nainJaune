@@ -35,8 +35,8 @@ public class PlateauTest{
 		assertThat(p.prenante(c)==0);
 
 		p.prenante(d);
-		assertThat(c.prise()==false);
-		assertThat(d.prise()==true);
+		assertThat(p.prise(c)==false);
+		assertThat(p.prise(d)==true);
 		
 
 

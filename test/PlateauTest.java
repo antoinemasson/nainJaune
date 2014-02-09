@@ -31,6 +31,15 @@ public class PlateauTest{
 		p.mise();
 
 		Carte c = new Carte("trois","pique");
+		Carte d = new Carte("roi","coeur");
 		assertThat(p.prenante(c)==0);
+
+		p.prenante(d);
+		assertThat(c.prise()==false);
+		assertThat(d.prise()==true);
+		
+
+
+
 }
 }

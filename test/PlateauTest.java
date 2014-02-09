@@ -38,7 +38,7 @@ public class PlateauTest{
 		assertThat(p.prise(c)==false);
 		assertThat(p.prise(d)==true);
 		
-		assertThat(p.double(d)==32);
+		assertThat(p.toDouble(d)==32);
 
 
 }

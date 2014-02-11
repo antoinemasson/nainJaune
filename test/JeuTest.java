@@ -28,7 +28,13 @@ public class JeuTest {
 	
 	@Test
 	public void Jeu_(){
-		Jeu J = new Jeu();
-		assertThat(J!=null);
+		Jeu j = new Jeu();
+		assertThat(j!=null);
+
+		assertThat(j.player(0).equals(new Joueur("Max")));
+		assertThat(j.player(1).equals(new Joueur("Tom")));
+		assertThat(j.player(2).equals(new Joueur("Paul")));
+		assertThat(j.player(3).equals(new Joueur("Jean")));
+		
 }
 }

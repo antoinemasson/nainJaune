@@ -78,6 +78,10 @@ public class Jeu{
             
         }
         
+        public Plateau get_plateau(){
+            return plat;
+        }
+        
         public Joueur player(int i){
             return players[i];
         }

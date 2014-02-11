@@ -17,6 +17,11 @@ public class Plateau{
         plat[4]= new Case(new Carte("sept","carreaux"),5);
     }
     
+    public double can(int pos){
+        return plat[pos].get_cagnotte();
+    }
+    
+    
     public void mise(){
         for( int i=0; i<5; i+=1)
             plat[i].mise(4*plat[i].get_mise());   

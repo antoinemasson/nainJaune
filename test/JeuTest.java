@@ -37,9 +37,9 @@ public class JeuTest {
 		assertThat(j.player(3).equals(new Joueur("Jean")));
 		
 		j.donne();
-		assertThat(j.player(0).deck().size()==12);
-		assertThat(j.player(1).deck().size()==12);
-		assertThat(j.player(2).deck().size()==12);
-		assertThat(j.player(3).deck().size()==12);
+		assertThat(j.player(0).deck().length()==12);
+		assertThat(j.player(1).deck().length()==12);
+		assertThat(j.player(2).deck().length()==12);
+		assertThat(j.player(3).deck().length()==12);
 }
 }

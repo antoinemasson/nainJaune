@@ -2,7 +2,7 @@ package controllers;
 
 import play.*;
 import play.mvc.*;
-
+import models.Jeu;
 import views.html.*;
 
 public class Application extends Controller {
@@ -11,4 +11,9 @@ public class Application extends Controller {
         return ok(index.render("Your new application is ready."));
     }
 
+    public static Result plat() {
+        Jeu j=new Jeu();
+        j.donne();
+        return ok(plat.render(j));
+    }
 }

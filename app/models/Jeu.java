@@ -5,13 +5,15 @@ import javax.validation.*;
 import play.data.validation.Constraints.*;
 
 public class Jeu{
-        private Set<Carte> s = new TreeSet<Carte>();
+        private List<Carte> s;
         private Carte[] fausse=new Carte[52];
         private Joueur[] players= new Joueur[4];
         private Plateau plat;
         
         
         public Jeu(){
+            
+            s= new ArrayList<Carte>();
             s.add(new Carte("un","carreaux"));
             s.add(new Carte("deux","carreaux"));
             s.add(new Carte("trois","carreaux"));
@@ -74,5 +76,20 @@ public class Jeu{
             players[3]= new Joueur("Jean");
             plat=new Plateau(); 
             
+        }
+        
+        public Joueur player(int i){
+            return players[i];
+        }
+        
+        public void donne(){
+            List<Carte> d = new ArrayList<Carte>(s);
+            Collections.shuffle(d);
+            for(int i=0; i<d.size()-5; i++){
+                if(i<12) players[0].donne(d.get(i));
+                else if(i<24) players[1].donne(d.get(i));
+                else if(i<36) players[2].donne(d.get(i));
+                else if(i<48) players[3].donne(d.get(i));                
+            }
         }
 }

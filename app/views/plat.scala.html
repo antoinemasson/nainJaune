@@ -1,0 +1,61 @@
+@(jeu: Jeu)
+
+<h1>Jeu du Nain Jaune</h1><br/>
+<strong>fait en JAVA avec le framework PLAY<br/>
+par Antoine Masson et Cédric Lefèvre</strong><br/>
+
+
+<h3>Tour de @(jeu.player(0).getName())</h3><br/>
+
+<table>
+    <tr>
+        <td>Roi de Coeur, @(jeu.can(3))</td>
+        <td/>
+        <td>Dame de Pique, @(jeu.can(2))</td>
+    </tr>
+    <tr>
+        <td/>
+        <td>Sept de Carreaux, @(jeu.can(4))</td>
+        <td/>
+    </tr>
+    <tr>
+        <td>Dix de Carreaux, @(jeu.can(0))</td>
+        <td/>
+        <td>Valet de Trefle, @(jeu.can(1))</td>
+    </tr>  
+</table>
+<br/><br/>
+Deck de @(jeu.player(0).getName()) <br/>
+
+<ul>
+    @for( a <- jeu.player(0).deck() ){
+        <li>@a.get_valeur() de @a.get_signe()</li>
+    }
+</ul>
+
+<br/><br/>
+
+Deck de @(jeu.player(1).getName()) <br/>
+
+<ul>
+    @for( a <- jeu.player(1).deck() ){
+        <li>@a.get_valeur() de @a.get_signe()</li>
+    }
+</ul>
+<br/><br/>
+Deck de @(jeu.player(2).getName()) <br/>
+
+<ul>
+    @for( a <- jeu.player(2).deck() ){
+        <li>@a.get_valeur() de @a.get_signe()</li>
+    }
+</ul>
+
+<br/><br/>
+Deck de @(jeu.player(3).getName()) <br/>
+
+<ul>
+    @for( a <- jeu.player(3).deck() ){
+        <li>@a.get_valeur() de @a.get_signe()</li>
+    }
+</ul>

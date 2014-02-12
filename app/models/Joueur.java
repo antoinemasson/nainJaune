@@ -7,14 +7,14 @@ import play.data.validation.Constraints.*;
 public class Joueur{
 
 	@Required
-	private Set<Carte> s = new TreeSet<Carte>();
+	private List<Carte> s;
 	private String nom;
 	private int argent;
 
 	public Joueur(String n){
 		argent = 150;
 		nom = n;
-		s = null;
+		s = new ArrayList<Carte>();
 	}
 
 	public int get_argent(){
@@ -48,4 +48,8 @@ public class Joueur{
     public int nbCartes(){
         return s.size();
     }
+    
+    public String getName(){
+		return nom;
+}
 }

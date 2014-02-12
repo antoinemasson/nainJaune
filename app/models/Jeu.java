@@ -95,5 +95,6 @@ public class Jeu{
                 else if(i<36) players[2].donne(d.get(i));
                 else if(i<48) players[3].donne(d.get(i));                
             }
+            plat.mise();
         }
 }

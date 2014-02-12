@@ -82,6 +82,11 @@ public class Jeu{
             return plat;
         }
         
+        
+        public double can(int i){
+			return plat.can(i);
+		}
+        
         public Joueur player(int i){
             return players[i];
         }

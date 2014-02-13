@@ -1,12 +1,17 @@
 @(jeu: Jeu)
-
+<link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/main.css")'>
+<header>
 <h1>Jeu du Nain Jaune</h1><br/>
 <strong>fait en JAVA avec le framework PLAY<br/>
 par Antoine Masson et Cédric Lefèvre</strong><br/>
+</header>
 
 
 <h3>Tour de @(jeu.player(0).getName())</h3><br/>
-
+<div id="score">
+<h3>score de @(jeu.player(0).getName()) :</h3>
+</div>
+<div>
 <table>
     <tr>
         <td>Roi de Coeur, @(jeu.can(3))</td>
@@ -24,26 +29,30 @@ par Antoine Masson et Cédric Lefèvre</strong><br/>
         <td>Valet de Trefle, @(jeu.can(1))</td>
     </tr>  
 </table>
+</div>
+
 <br/><br/>
-Deck de @(jeu.player(0).getName()) <br/>
+<fieldset><legend>Deck de @(jeu.player(0).getName())</legend>
 
 <ul>
     @for( a <- jeu.player(0).deck() ){
         <li>@a.get_valeur() de @a.get_signe()</li>
     }
 </ul>
-
+</fieldset>
 <br/><br/>
 
-Deck de @(jeu.player(1).getName()) <br/>
+<fieldset><legend>Deck de @(jeu.player(1).getName())</legend>
 
 <ul>
     @for( a <- jeu.player(1).deck() ){
         <li>@a.get_valeur() de @a.get_signe()</li>
     }
 </ul>
+</fieldset>
 <br/><br/>
-Deck de @(jeu.player(2).getName()) <br/>
+
+<fieldset><legend>Deck de @(jeu.player(2).getName())</legend>
 
 <ul>
     @for( a <- jeu.player(2).deck() ){
@@ -51,11 +60,14 @@ Deck de @(jeu.player(2).getName()) <br/>
     }
 </ul>
 
+</fieldset>
 <br/><br/>
-Deck de @(jeu.player(3).getName()) <br/>
+
+<fieldset><legend>Deck de @(jeu.player(3).getName())</legend>
 
 <ul>
     @for( a <- jeu.player(3).deck() ){
         <li>@a.get_valeur() de @a.get_signe()</li>
     }
 </ul>
+</fieldset>

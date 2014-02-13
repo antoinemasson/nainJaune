@@ -94,7 +94,7 @@ public class Jeu{
         public void donne(){
             List<Carte> d = new ArrayList<Carte>(s);
             Collections.shuffle(d);
-            for(int i=0; i<d.size()-5; i++){
+            for(int i=0; i<d.size()-4; i++){
                 if(i<12) players[0].donne(d.get(i));
                 else if(i<24) players[1].donne(d.get(i));
                 else if(i<36) players[2].donne(d.get(i));
